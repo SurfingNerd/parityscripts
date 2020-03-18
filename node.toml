@@ -1,0 +1,29 @@
+[parity]
+mode = "active"
+base_path = "./data"
+
+[footprint]
+tracing = "off"
+pruning = "fast"
+db_compaction = "hdd"
+cache_size = 26000
+
+[network]
+port = 30303
+min_peers = 5
+max_peers = 10
+
+[rpc]
+disable = false
+port = 8545
+interface = "local"
+cors = []
+apis = ["all"]
+hosts = ["none"]
+
+[websockets]
+disable = false
+interface = "local"
+apis = ["all"]
+port = 8546
+#cors = ["all"]
